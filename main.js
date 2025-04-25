@@ -33,5 +33,18 @@ btnAgregar.addEventListener("click", () => {
     const img = document.createElement("img");
     img.src = imagen;
     img.alt = nombre;
+    
+    // Boton de cerrar (eliminar)
+    const cerrar = document.createElement("button");
+    cerrar.className = "cerrar";
+    cerrar.textContent = "✖";
+    cerrar.addEventListener("click", () => tarjeta.remove());
 
+    // Cambiar imagen al hacer clic
+    img.addEventListener("click", () => {
+      const nuevaURL = prompt("Ingresa la nueva URL de imagen:");
+      if (nuevaURL) {
+        img.src = nuevaURL;
+      }
+    });
 });
