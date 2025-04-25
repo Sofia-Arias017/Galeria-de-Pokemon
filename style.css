@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background: #f3f3f3;
+    text-align: center;
+}
+
+input,
+button {
+    padding: 10px;
+    margin: 5px;
+    font-size: 16px;
+}
+
+button {
+    cursor: pointer;
+    background: #ffcb05;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 15px;
+}
+
+.tarjeta {
+    background: white;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    width: 150px;
+    position: relative;
+    transition: transform 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.tarjeta:hover {
+    transform: scale(1.05);
+}
+
+.tarjeta img {
+    width: 100%;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.tarjeta p {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.cerrar {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    background: crimson;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 14px;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
